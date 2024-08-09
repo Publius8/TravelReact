@@ -11,10 +11,10 @@ import TouristComment from '../src/assets/components/TouristComment.jsx'
 import Blog from '../src/assets/components/Blog.jsx'
 import Footer from '../src/assets/components/Footer.jsx'
 import './assets/css/index.css'
-
+import ContactPage from "./assets/components/ContactPage.jsx"
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    {/* <App />
     <Navbar />
     <OrderTable />
     <Advert />
@@ -23,6 +23,7 @@ createRoot(document.getElementById('root')).render(
     <Tours />
     <TouristComment />
     <Blog />
-    <Footer />
+    <Footer /> */}
+    <ContactPage/>
   </StrictMode>,
 )

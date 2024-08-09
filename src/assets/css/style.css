@@ -57,6 +57,11 @@ header {
     .submitus {
         width: 100% !important;
     }
+    .one-card{
+        margin-right: 30px;
+        width: 255px;
+        height: 271px;
+    }
 
 }
 
@@ -94,6 +99,21 @@ header {
         min-height: 60vh;
         background-attachment: scroll;
     }
+    .map-contact{
+        width: 330px;
+        height: 300px;
+    }
+    .form-contact{
+        width: 330px;
+        height: 560px;
+    }
+    .one-card {
+        width: 182px;
+        height: 257px;
+    }
+    .west{
+        width: 192px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -130,6 +150,33 @@ header {
     
     header {
         min-height: 100vh;
+    }
+    .contact-cards{
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .one-card{
+        margin-right: 0;
+        width: 90%;
+    }
+    .map-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .form-contact{
+        width: 90%;
+        margin-top: 30px;
+    }
+    .map-contact{
+        margin-left: 35px;
+        width: 90vw;
     }
 }
 
