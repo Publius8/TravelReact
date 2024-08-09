@@ -12,6 +12,7 @@ import Blog from '../src/assets/components/Blog.jsx'
 import Footer from '../src/assets/components/Footer.jsx'
 import './assets/css/index.css'
 import ContactPage from "./assets/components/ContactPage.jsx"
+import BlogPage from "./assets/components/BlogPage.jsx"
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App />
@@ -24,6 +25,7 @@ createRoot(document.getElementById('root')).render(
     <TouristComment />
     <Blog />
     <Footer /> */}
-    <ContactPage/>
+    {/* <ContactPage/> */}
+    <BlogPage />
   </StrictMode>,
 )
