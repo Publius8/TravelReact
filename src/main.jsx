@@ -13,6 +13,9 @@ import Footer from '../src/assets/components/Footer.jsx'
 import './assets/css/index.css'
 import ContactPage from "./assets/components/ContactPage.jsx"
 import BlogPage from "./assets/components/BlogPage.jsx"
+import HotelPage from "./assets/components/HotelPage.jsx"
+// import AboutUsPage from "./assets/components/AboutUsPage.jsx"
+import PlacePage from "./assets/components/PlacePage.jsx"
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App />
@@ -26,6 +29,9 @@ createRoot(document.getElementById('root')).render(
     <Blog />
     <Footer /> */}
     {/* <ContactPage/> */}
-    <BlogPage />
+    {/* <BlogPage /> */}
+    {/* <AboutUsPage /> */}
+    {/* <PlacePage /> */}
+    <HotelPage />
   </StrictMode>,
 )

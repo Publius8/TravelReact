@@ -1,0 +1,257 @@
+@import url('./reset.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+body {
+    font-family: "Poppins", sans-serif;
+}
+.maxWidth {
+    width: 1200px;
+    margin: 0 auto;
+}
+.marginus {
+    margin-top: 200px;
+}
+.absolutos {
+    bottom: 20px;
+}
+header {
+    background-image: url('../images/pexels-pixabay-273886.jpg');
+    min-height: 690px;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border: 0.1px solid transparent;
+}
+
+
+.pg.active {
+    background-color: #33313b;
+    color: #fff;
+}
+
+
+
+@media (max-width: 1200px) {
+    .maxWidth {
+        width: 100%;
+        padding: 0;
+    }
+    .absolutos {
+        bottom: -600px;
+    }
+
+    nav {
+        width: 100% !important;
+    }
+
+    .mobilesPositons {
+        display: flex !important;
+        flex-direction: column !important;
+        margin-left: 50px;
+        width: 90%;
+
+        label {
+            border: none !important;
+        }
+    }
+    .mobilesPositonsButtons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .submitus {
+        width: 100% !important;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .marginus {
+        margin-top: 100px;
+    }
+    nav {
+        max-width: 1200px !important;
+    }
+
+    .absolutos {
+        bottom: -400px;
+    }
+
+    .mobilesPositons {
+        display: flex !important;
+        flex-direction: column !important;
+        margin-left: 45px;
+        width: 90%;
+
+        label {
+            border: none !important;
+        }
+    }
+    .mobilesPositonsButtons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .submitus {
+        width: 100% !important;
+    }
+    header {
+        min-height: 60vh;
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 768px) {
+    .marginus {
+        margin-top: 130px;
+    }
+
+    .absolutos {
+        bottom: -600px;
+    }
+    .mobileCard {
+        width: 100% !important;
+        margin-bottom: 40px !important;
+    }
+    .mobilesPositons {
+        display: flex !important;
+        flex-direction: column !important;
+        margin-left: 35px;
+        width: 90%;
+
+        label {
+            border: none !important;
+        }
+    }
+    .mobilesPositonsButtons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .submitus {
+        width: 100% !important;
+    }
+
+    
+    header {
+        min-height: 100vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .marginus {
+        margin-top: 150px;
+    }
+
+    h1 {
+        font-size: 50px !important;
+    }
+
+    .absolutos {
+        bottom: -700px;
+    }
+
+    .mobilesPositons {
+        display: flex !important;
+        flex-direction: column !important;
+        margin: 0 !important;
+        width: 100%;
+        padding: 15px;
+
+        label {
+            border: none !important;
+        }
+    }
+    .mobilesPositonsButtons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .submitus {
+        width: 100% !important;
+    }
+    header {
+        min-height: 100vh;
+    }
+    nav {
+        background-color: black;
+        width: 100% !important;
+    }
+    .mobilePushDown {
+        margin-top: 750px !important;
+        margin-bottom: 40px;
+    }
+    .mobileFOoter {
+        width: 100% !important;
+    }
+    h1 {
+        font-size: 45px !important;
+    }
+    .mobileCard {
+        width: 100% !important;
+        margin-bottom: 40px !important;
+    }
+}
+
+@media (max-width:1400px) {
+    .most-p {
+        width: 261px;
+        height: 163px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .popular-place-img {
+        width: 209px;
+        height: 270px;
+        object-fit: cover;
+    }
+
+    .most-p {
+        width: 189px;
+        height: 190px;
+    }
+}
+
+@media (max-width: 768px) {
+    .orange-11 {
+        top: -7px;
+        left: 40px;
+    }
+
+    .popular-place-img {
+        width: 290px;
+        height: 270px;
+        object-fit: cover;
+    }
+
+    .most-p {
+        width: 261px;
+        height: 163px;
+    }
+
+    .popular-place {
+        width: 100%;
+        max-width: 335px;
+        margin-bottom: 130px;
+    }
+
+    .popular-places {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .popular-places {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
