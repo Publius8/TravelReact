@@ -16,7 +16,7 @@ body {
     bottom: 20px;
 }
 header {
-    background-image: url('../images/pexels-pixabay-273886.jpg');
+    background-image: url('pexels-pixabay-273886.jpg');
     min-height: 690px;
     
     background-attachment: fixed;

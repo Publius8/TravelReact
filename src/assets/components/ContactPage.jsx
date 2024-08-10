@@ -1,11 +1,9 @@
 import React from "react";
-import "../css/style.css"
-import Navbar from "./navbar";
-import Footer from "./Footer";
+import "../css/contact.css"
+
 const ContactPage = () => {
   return (
     <div>
-        <Navbar/>
       <div className="contact-container">
         <div className="contact-cards justify-evenly pt-[112px] mb-[24px] flex justify-center items-center">
           <ContactCard icon="fa-location-dot" title="Address" description="198 West 21th Street, Suite 721 New York NY 10016" />
@@ -77,7 +75,6 @@ const ContactPage = () => {
         </div>
       </div>
 
-      <Footer/>
     </div>
   );
 };

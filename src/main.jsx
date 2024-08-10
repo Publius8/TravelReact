@@ -1,37 +1,39 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import Navbar from '../src/assets/components/navbar.jsx'
-import OrderTable from '../src/assets/components/orderTable.jsx'
-import Advert from '../src/assets/components/advert.jsx'
-import ShushaImgBlock from '../src/assets/components/ShuhaImgBlock.jsx'
-import ImageText from '../src/assets/components/ImageText.jsx'
-import Tours from '../src/assets/components/Tours.jsx'
-import TouristComment from '../src/assets/components/TouristComment.jsx'
-import Blog from '../src/assets/components/Blog.jsx'
-import Footer from '../src/assets/components/Footer.jsx'
-import './assets/css/index.css'
-import ContactPage from "./assets/components/ContactPage.jsx"
-import BlogPage from "./assets/components/BlogPage.jsx"
-import HotelPage from "./assets/components/HotelPage.jsx"
-// import AboutUsPage from "./assets/components/AboutUsPage.jsx"
-import PlacePage from "./assets/components/PlacePage.jsx"
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    {/* <App />
-    <Navbar />
-    <OrderTable />
-    <Advert />
-    <ShushaImgBlock />
-    <ImageText />
-    <Tours />
-    <TouristComment />
-    <Blog />
-    <Footer /> */}
-    {/* <ContactPage/> */}
-    {/* <BlogPage /> */}
-    {/* <AboutUsPage /> */}
-    {/* <PlacePage /> */}
-    <HotelPage />
-  </StrictMode>,
-)
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import Navbar from '../src/assets/components/navbar.jsx';
+import Footer from '../src/assets/components/Footer.jsx';
+import './assets/css/index.css';
+
+import HomePage from "./assets/components/HomePage.jsx";
+import ContactPage from "./assets/components/ContactPage.jsx";
+import BlogPage from "./assets/components/BlogPage.jsx";
+import HotelPage from "./assets/components/HotelPage.jsx";
+import AboutUsPage from "./assets/components/AboutUsPage.jsx";
+import PlacePage from "./assets/components/PlacePage.jsx";
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+
+function App() {
+  return (
+    <StrictMode>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutUsPage />} />
+          <Route path="/places" element={<PlacePage />} />
+          <Route path="/hotels" element={<HotelPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </StrictMode>
+  );
+}
+
+createRoot(document.getElementById('root')).render(<App />);

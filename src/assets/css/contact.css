@@ -1,0 +1,165 @@
+@import url('./reset.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+body {
+    font-family: "Poppins", sans-serif;
+}
+header {
+    background-image: url('../images/pexels-arthur-how-wong-3836390-5688988.jpg');
+    min-height: 520px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border: 0.1px solid transparent;
+}
+.maxWidth {
+    width: 1200px;
+    margin: 0 auto;
+}
+.marginus {
+    margin-top: 200px;
+}
+.absolutos {
+    bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+    .one-card{
+        margin-right: 30px;
+        width: 255px;
+        height: 271px;
+    }
+    .marginus {
+        margin-top: 300px;
+    }
+    .maxWidth {
+        width: 100%;
+        padding: 0;
+    }
+    .absolutos {
+        bottom: -600px;
+    }
+
+    nav {
+        width: 100% !important;
+    }
+
+
+}
+@media (max-width: 992px) {
+    .map-contact{
+        width: 330px;
+        height: 300px;
+    }
+    .form-contact{
+        width: 330px;
+        height: 560px;
+    }
+    .one-card {
+        width: 182px;
+        height: 257px;
+    }
+    .west{
+        width: 192px;
+    }
+    .marginus {
+        margin-top: 100px;
+    }
+    nav {
+        max-width: 1200px !important;
+    }
+
+    .absolutos {
+        bottom: -400px;
+    }
+
+    .mobilesPositons {
+        display: flex !important;
+        flex-direction: column !important;
+        margin-left: 45px;
+        width: 90%;
+
+        label {
+            border: none !important;
+        }
+    }
+    .mobilesPositonsButtons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .submitus {
+        width: 100% !important;
+    }
+    header {
+        min-height: 60vh;
+        background-attachment: scroll;
+    }
+
+}
+@media (max-width: 768px) {
+    .marginus {
+        margin-top: 300px;
+    }
+
+    .absolutos {
+        bottom: -600px;
+    }
+    .mobileCard {
+        width: 100% !important;
+        margin-bottom: 40px !important;
+    }
+    .mobilesPositons {
+        display: flex !important;
+        flex-direction: column !important;
+        margin-left: 35px;
+        width: 90%;
+
+        label {
+            border: none !important;
+        }
+    }
+    .mobilesPositonsButtons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .submitus {
+        width: 100% !important;
+    }
+
+    
+    header {
+        min-height: 100vh;
+    }
+    .contact-cards{
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .one-card{
+        margin-right: 0;
+        width: 90%;
+    }
+    .map-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .form-contact{
+        width: 90%;
+        margin-top: 30px;
+    }
+    .map-contact{
+        margin-left: 35px;
+        width: 90vw;
+    }
+}

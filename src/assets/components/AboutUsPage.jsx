@@ -1,13 +1,11 @@
 import React from 'react'
 import '../css/aboutUs.css'
-import Navbar from './navbar'
 import CommentBox from './CommentBox'
-import Footer from './Footer'
+
 
 function AboutUsPage() {
     return (
         <>
-        <Navbar />
   <div className="container mx-auto max-w-[1200px] px-[10px] flex flex-col sm:flex-row items-center justify-center gap-8 mt-[20px] mb-[50px] mobilePushDown">
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 gap-x-1.5 w-full max-w-3xl">
       <div className="relative w-full h-96 sm:w-[285px] shadow-lg rounded-lg animate-fadeInUp animate-delay-1">
@@ -147,7 +145,7 @@ function AboutUsPage() {
     <button className="w-[10px] h-[10px] rounded-full bg-[#D7D7D7]" id="next" />
   </div>
 </div>
-<Footer />
+
         </>
     )
 }

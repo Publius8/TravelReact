@@ -1,14 +1,11 @@
 import React from "react";
 import "../css/blog.css";
-import Navbar from "./navbar";
 import BlogCard from "./BlogCard";
-import Footer from "./Footer";
 
 
 function BlogPage() {
   return (
     <>
-      <Navbar />
       <div className="container max-w-[1200px] mx-auto h-[100%]">
         <div className="text-center pt-20">
           <span
@@ -52,7 +49,6 @@ function BlogPage() {
         </div>
 
       </div>
-        <Footer />
     </>
   );
 }
