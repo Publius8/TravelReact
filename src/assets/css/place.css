@@ -16,7 +16,6 @@ body {
     bottom: 20px;
 }
 header {
-    min-height: 650px;
     background-color: #578BA0;
     background-attachment: fixed;
     background-position: center;
@@ -24,7 +23,6 @@ header {
     background-size: cover;
     position: relative;
     border: 0.1px solid transparent;
-    background-image: url('pexels-szelei-robert-543378-1482193.jpg')
 }
 
 

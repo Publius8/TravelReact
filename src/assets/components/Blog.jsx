@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/style.css";
 import BlogCard from "./BlogCard";
-import Footer from "./Footer";
+
 
 function Blog() {
   return (

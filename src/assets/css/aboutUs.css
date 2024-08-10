@@ -16,8 +16,6 @@ body {
     bottom: -70px;
 }
 header {
-    background-image: url('pexels-asadphoto-1450340.jpg');
-    min-height: 420px;
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;

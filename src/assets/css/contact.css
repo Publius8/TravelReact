@@ -6,8 +6,6 @@ body {
     font-family: "Poppins", sans-serif;
 }
 header {
-    background-image: url('../images/pexels-arthur-how-wong-3836390-5688988.jpg');
-    min-height: 520px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

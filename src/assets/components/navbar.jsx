@@ -4,9 +4,105 @@ import '../css/style.css';
 
 function Navbar() {
     const location = useLocation();
-    
+
+    const getHeaderStyles = () => {
+        switch (location.pathname) {
+            case '/':
+                return {
+                    backgroundImage: 'url(pexels-asadphoto-1483054.jpg)',
+                    minHeight: '700px',
+                };
+            case '/about':
+                return {
+                    backgroundImage: 'url(pexels-asadphoto-1450340.jpg)',
+                    minHeight: '420px',
+                };
+            case '/places':
+                return {
+                    backgroundImage: 'url(pexels-szelei-robert-543378-1482193.jpg)',
+                    minHeight: '700px',
+                };
+            case '/hotels':
+                return {
+                    backgroundImage: 'url(pexels-pixabay-273886.jpg)',
+                    minHeight: '700px',
+                };
+            case '/blog':
+                return {
+                    backgroundImage: 'url(pexels-asadphoto-9215862.jpg)',
+                    minHeight: '420px',
+                };
+            case '/contact':
+                return {
+                    backgroundImage: 'url(pexels-arthur-how-wong-3836390-5688988.jpg)',
+                    minHeight: '420px',
+                };
+            default:
+                return {
+                    backgroundImage: 'url(/path/to/default-image.jpg)',
+                    minHeight: '520px',
+                };
+        }
+    };
+
+    const getHeaderText = () => {
+        switch (location.pathname) {
+            case '/':
+                return {
+                    greeting: 'Xoş gəldiniz',
+                    title: 'Sevdiyiniz Məkanı <br /> Bizimlə Kəşf Edin',
+                    description: 'Dünyanın istənilən yerinə səyahət edin.',
+                };
+            case '/about':
+                return {
+                    greeting: 'Haqqımızda',
+                    title: 'Biz Kimik?',
+                    description: 'Məlumatımızı oxuyun və bizim haqqımızda daha çox öyrənin.',
+                };
+            case '/places':
+                return {
+                    greeting: 'Məkan',
+                    title: 'Kəşf Ediləcək Məkanlar',
+                    description: 'Ən yaxşı yerləri tapın və yeni yerləri kəşf edin.',
+                };
+            case '/hotels':
+                return {
+                    greeting: 'Hotel',
+                    title: 'Mükəmməl Otellər',
+                    description: 'Ən yaxşı otel təkliflərini tapın və rezervasiya edin.',
+                };
+            case '/blog':
+                return {
+                    greeting: 'Blog',
+                    title: 'Son Yeniliklər',
+                    description: 'Son yazılarımızı oxuyun və xəbərləri izləyin.',
+                };
+            case '/contact':
+                return {
+                    greeting: 'Əlaqə',
+                    title: 'Bizimlə Əlaqə',
+                    description: 'Sual və təklifləriniz üçün bizimlə əlaqə saxlayın.',
+                };
+            default:
+                return {
+                    greeting: 'Xoş gəldiniz',
+                    title: 'Bizimlə Kəşf Edin',
+                    description: 'Dünyanın istənilən yerinə səyahət edin.',
+                };
+        }
+    };
+
+    const { greeting, title, description } = getHeaderText();
+
     return (
-        <header id="headerColor" >
+        <header
+            id="headerColor"
+            style={{
+                ...getHeaderStyles(),
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+            }}
+        >
             <nav
                 id="navScroll"
                 className="border-gray-200 bg-white w-[100%]"
@@ -116,19 +212,16 @@ function Navbar() {
                 </div>
             </nav>
             <div className="maxWidth">
-                <div className="flex flex-col marginus">
+                <div id='here' className="flex flex-col marginus">
                     <span
                         className="text-white font-arizonia text-3xl"
                         style={{ fontFamily: '"Arizonia", cursive' }}
                     >
-                        Xoş gəldiniz
+                        {greeting}
                     </span>
-                    <h1 className="text-6xl text-white leading-[1.2] font-bold">
-                        Sevdiyiniz Məkanı <br />
-                        Bizimlə Kəşf Edin
-                    </h1>
+                    <h1 className="text-6xl text-white leading-[1.2] font-bold" dangerouslySetInnerHTML={{ __html: title }} />
                     <span className="text-white mt-5 font-bold">
-                        Dünyanın istənilən yerinə səyahət edin.
+                        {description}
                     </span>
                 </div>
             </div>
