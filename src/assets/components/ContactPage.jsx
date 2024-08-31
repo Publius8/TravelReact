@@ -1,9 +1,43 @@
-import React from "react";
-import "../css/contact.css"
+import "../css/contact.css";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { Toaster, toast } from 'react-hot-toast';
 
 const ContactPage = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_tbzu7mn', 'template_0n3w0xq', form.current, 'Y7kf7iHMVP0HwaKkj')
+      .then(
+        () => {
+          toast.success('Message sent successfully!', {
+            position: 'center',
+            style: {
+              background: '#6DA4CD',
+              color: '#fff',
+            },
+          });
+
+          form.current.reset();
+        },
+        (error) => {
+          toast.error(`Failed to send message: ${error.text}`, {
+            position: 'center',
+            style: {
+              background: '#6DA4CD',
+              color: '#fff',
+            },
+          });
+        }
+      );
+  };
+
   return (
     <div>
+      <Toaster />
       <div className="contact-container">
         <div className="contact-cards justify-evenly pt-[112px] mb-[24px] flex justify-center items-center">
           <ContactCard icon="fa-location-dot" title="Address" description="198 West 21th Street, Suite 721 New York NY 10016" />
@@ -26,13 +60,15 @@ const ContactPage = () => {
             </div>
           </div>
           <div className="form-contact w-[550px] h-[560px] p-[20px] bg-[#F9FAFB]">
-            <form className="p-5 contact-form">
+            <form className="p-5 contact-form" ref={form} onSubmit={sendEmail}>
               <div className="form-group">
                 <input
                   type="text"
                   style={{ borderRadius: "5px" }}
                   className="form-control py-2 px-3 w-full outline outline-1 outline-gray-300 bg-white my-[10px] h-[52px] text-15px"
                   placeholder="Your Name"
+                  name="user_name"
+                  required
                 />
               </div>
               <div className="form-group">
@@ -41,6 +77,8 @@ const ContactPage = () => {
                   style={{ borderRadius: "5px" }}
                   className="form-control w-full py-2 px-3 outline outline-1 outline-gray-300 bg-white my-[10px] h-[52px] text-15px"
                   placeholder="Your Email"
+                  name="user_email"
+                  required
                 />
               </div>
               <div className="form-group">
@@ -49,17 +87,20 @@ const ContactPage = () => {
                   style={{ borderRadius: "5px" }}
                   className="form-control w-full py-2 px-3 outline outline-1 outline-gray-300 bg-white my-[10px] h-[52px] text-15px"
                   placeholder="Subject"
+                  name="user_subject"
+                  required
                 />
               </div>
               <div className="form-group">
                 <textarea
-                  name=""
+                  name="message"
                   id=""
                   style={{ borderRadius: "5px" }}
                   cols="30"
                   rows="7"
                   className="form-control py-2 px-3 w-full my-[10px] text-15px outline outline-1 outline-gray-300"
                   placeholder="Message"
+                  required
                 ></textarea>
               </div>
               <div className="form-group">
@@ -74,7 +115,6 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 };
@@ -90,4 +130,3 @@ const ContactCard = ({ icon, title, description }) => (
 );
 
 export default ContactPage;
-
