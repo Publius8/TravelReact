@@ -10,10 +10,10 @@ function OrderTable() {
         class="outline-none	border-none inline-flex items-center justify-center h-[50px] bg-white text-[#6DA4CD] active px-[30px] rounded-[5px_5px_0_0]">
         <span class="font-semibold text-[19px]">Tur axtarışı</span>
       </button>
-      <button
+      {/* <button
         class="outline-none	border-none inline-flex items-center justify-center h-[50px] bg-[#6DA4CD] text-white active px-[30px] rounded-[5px_5px_0_0]">
         <span class="font-semibold text-[19px]">Hotel</span>
-      </button>
+      </button> */}
     </div>
     <form class=" grid grid-cols-5 items-center gap-[24px] h-full justify-between divide-x-2">
       <div class="p-[24px] flex flex-col justify-evenly h-full flex-1">

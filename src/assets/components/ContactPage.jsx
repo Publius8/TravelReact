@@ -69,16 +69,20 @@ const ContactPage = () => {
                   placeholder="Your Name"
                   name="user_name"
                   required
+                  pattern="[A-Za-z\s]+"
+                  title="Please enter a valid name (letters and spaces only)."
                 />
               </div>
               <div className="form-group">
                 <input
-                  type="text"
+                  type="email"
                   style={{ borderRadius: "5px" }}
                   className="form-control w-full py-2 px-3 outline outline-1 outline-gray-300 bg-white my-[10px] h-[52px] text-15px"
                   placeholder="Your Email"
                   name="user_email"
                   required
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  title="Please enter a valid email address."
                 />
               </div>
               <div className="form-group">
@@ -121,7 +125,7 @@ const ContactPage = () => {
 
 const ContactCard = ({ icon, title, description }) => (
   <div className="card2 bg-[#F2F2F2] w-[230px] h-[214px] p-[30px] relative z-[1] text-center bg-white shadow-md">
-    <div className="icon2  w-[76px] h-[76px] bg-[#6DA4CD] mx-auto flex justify-center items-center rounded-full text-white">
+    <div className="icon2 w-[76px] h-[76px] bg-[#6DA4CD] mx-auto flex justify-center items-center rounded-full text-white">
       <i className={`fa-solid ${icon}`}></i>
     </div>
     <div className="title pt-[15px] text-[18px] font-[600]">{title}</div>

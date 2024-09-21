@@ -19,7 +19,7 @@ function ImageText() {
       uzaqda, kor mətnlər yaşayır.
     </p>
     <button
-      className="bg-[#6DA4CD] text-white px-6 py-3 rounded-lg shadow-lg hover:bg-[#2A87CF] transition duration-300 ease-in-out mt-6 animate-fadeInUp animate-delay-3"
+      className="bg-[#6DA4CD] text-white px-6 py-3 rounded-lg shadow-lg hover:bg-[#2A87CF] transition duration-300 ease-in-out mt-6 animate-fadeInUp animate-delay-3 hidden"
       onclick="location.href='https://planla.az/destination'"
     >
       Səyahətinizə İndi Başlayın

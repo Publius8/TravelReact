@@ -105,7 +105,7 @@ function Advert() {
         Semantics adlı böyük bir dil okeanının sahilində ayrılmış halda
         yaşayırlar.
       </p>
-      <div className="mt-6 animate-fadeInUp animate-delay-5">
+      <div className="mt-6 animate-fadeInUp animate-delay-5 hidden">
         <button
           className="bg-[#6DA4CD] text-white px-6 py-3 rounded-lg shadow-lg hover:bg-[#2A87CF] transition duration-300 ease-in-out"
           onclick="location.href='https://planla.az/destination';"
