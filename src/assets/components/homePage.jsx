@@ -13,6 +13,7 @@ function HomePage() {
     return (
         <>
         <OrderTable />
+        <div className='pleaseWork'></div>
         <Advert />
         <ShushaImgBlock />
         <ImageText />

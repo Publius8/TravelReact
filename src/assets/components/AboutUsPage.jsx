@@ -49,7 +49,7 @@ function AboutUsPage() {
 
     return (
         <>
-  <div className="container mx-auto max-w-[1200px] px-[10px] flex flex-col sm:flex-row items-center justify-center gap-8 mt-[20px] mb-[50px] mobilePushDown">
+  <div className="container mx-auto max-w-[1200px] px-[10px] flex flex-col sm:flex-row items-center justify-center gap-8 mt-[20px] mb-[50px]">
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 gap-x-1.5 w-full max-w-3xl">
       <div className="relative w-full h-96 sm:w-[285px] shadow-lg rounded-lg animate-fadeInUp animate-delay-1">
         <img
@@ -199,10 +199,7 @@ function AboutUsPage() {
     </div>
   
 
-  <div className="flex gap-2">
-    <button className="w-[10px] h-[10px] rounded-full bg-[#2A87CF]" id="prev" />
-    <button className="w-[10px] h-[10px] rounded-full bg-[#D7D7D7]" id="next" />
-  </div>
+
 </div>
 
         </>

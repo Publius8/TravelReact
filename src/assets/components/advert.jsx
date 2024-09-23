@@ -5,7 +5,7 @@ function Advert() {
     return (
         <>
 
-  <div className="container mx-auto max-w-[1200px] px-[10px] flex flex-col sm:flex-row items-center justify-center gap-8 mt-[20px] mb-[50px] mobilePushDown">
+  <div className="container mx-auto max-w-[1200px] px-[10px] flex flex-col sm:flex-row items-center justify-center gap-8 mt-[20px] mb-[50px] ">
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 gap-x-1.5 w-full max-w-3xl">
       <div className="relative w-full h-96 sm:w-[285px] shadow-lg rounded-lg animate-fadeInUp animate-delay-1">
         <img

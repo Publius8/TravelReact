@@ -218,8 +218,7 @@ header {
         width: 100% !important;
     }
     .mobilePushDown {
-        margin-top: 750px !important;
-        margin-bottom: 40px;
+
     }
     .mobileFOoter {
         width: 100% !important;
@@ -281,7 +280,12 @@ header {
         display: flex;
         flex-direction: column;
     }
-
+    .pleaseWork {
+        margin-bottom: 400px
+    }
+    .mobilButtonSize {
+        height: 50px !important;
+    }
 }
 
 @media (max-width: 576px) {
