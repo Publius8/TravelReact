@@ -4,7 +4,7 @@ import Navbar from '../src/assets/components/navbar.jsx';
 import Footer from '../src/assets/components/Footer.jsx';
 import './assets/css/index.css';
 
-import HomePage from "./assets/components/HomePage.jsx";
+import HomePage from "../src/assets/components/HomePage.jsx";
 import ContactPage from "./assets/components/ContactPage.jsx";
 import BlogPage from "./assets/components/BlogPage.jsx";
 import HotelPage from "./assets/components/HotelPage.jsx";
